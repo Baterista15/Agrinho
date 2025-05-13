@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AgriLog</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Trasp<span>Tec</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Fazer Pedido</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Seção de Login -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <h2>Login</h2>
+            <p>Acesse sua conta para solicitar transportes ou oferecer seus serviços</p>
+            
+            <form class="auth-form">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                
+                <div class="auth-options">
+                    <label>
+                        <input type="checkbox"> Lembrar-me
+                    </label>
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                </div>
+                
+                <button type="submit" class="btn">Entrar</button>
+                
+                <div class="auth-switch">
+                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="auth-benefits">
+            <h3>Benefícios de ter uma conta</h3>
+            <ul>
+                <li>Solicitar transportes de forma rápida</li>
+                <li>Acompanhar seus pedidos em tempo real</li>
+                <li>Histórico completo de transportes</li>
+                <li>Avaliar transportadores</li>
+                <li>Receber ofertas exclusivas</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="redes-sociais">
+            <a href="#">📱</a>
+            <a href="#">📧</a>
+            <a href="#">🔗</a>
+        </div>
+        <p>&copy; 2025 AgriLog - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
+    </footer>
+</body>
+</html>
