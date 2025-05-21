@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriLog - Aceitar Cotação</title>
+    <link rel="stylesheet" href="aceitacãoCotacao.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Trasp<span>Tec</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Fazer Pedido</a></li> 
+                <li><a href="cotacoes.html">Cotações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Seção Aceitação -->
+    <section class="aceitacao-cotacao">
+        <div class="voltar">
+            <a href="detalhesCotacao.html">← Voltar para detalhes</a>
+        </div>
+        
+        <h2>Confirmar Aceitação</h2>
+        <p class="subtitulo">Você está prestes a aceitar a cotação da Transportadora Rápida Ltda</p>
+        
+        <div class="resumo-cotacao">
+            <h3>Resumo da Cotação</h3>
+            <div class="resumo-item">
+                <span>Pedido:</span>
+                <span>#AG2025001 - 5 toneladas de tomate</span>
+            </div>
+            <div class="resumo-item">
+                <span>Transportadora:</span>
+                <span>Transportadora Rápida Ltda</span>
+            </div>
+            <div class="resumo-item">
+                <span>Valor:</span>
+                <span>R$ 1.850,00</span>
+            </div>
+            <div class="resumo-item">
+                <span>Previsão de entrega:</span>
+                <span>16/06/2025 até 12:00</span>
+            </div>
+        </div>
+        
+        <div class="form-pagamento">
+            <h3>Forma de Pagamento</h3>
+            <div class="opcoes-pagamento">
+                <label class="opcao">
+                    <input type="radio" name="pagamento" checked>
+                    <span>Pix (5% de desconto)</span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="pagamento">
+                    <span>Cartão de Crédito (parcelado em até 3x)</span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="pagamento">
+                    <span>Boleto Bancário</span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="pagamento">
+                    <span>Transferência Bancária</span>
+                </label>
+            </div>
+            
+            <div class="termos">
+                <label>
+                    <input type="checkbox" required>
+                    <span>Li e aceito os <a href="#">Termos de Serviço</a> e <a href="#">Política de Privacidade</a> da AgriLog</span>
+                </label>
+                <label>
+                    <input type="checkbox" required>
+                    <span>Confirmo que os dados da carga estão corretos</span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="confirmacao">
+            <h3>Valor Total: <span>R$ 1.757,50</span> (com desconto)</h3>
+            <p>50% será cobrado agora e 50% na entrega da carga</p>
+            <a href="/" class="btn btn-primario btn-grande">Confirmar Aceitação</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="redes-sociais">
+            <a href="#">📱</a>
+            <a href="#">📧</a>
+            <a href="#">🔗</a>
+        </div>
+        <p>&copy; 2025 AgriLog - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
+    </footer>
+</body>
+</html>

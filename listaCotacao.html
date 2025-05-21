@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriLog - Cotações Disponíveis</title>
+    <link rel="stylesheet" href="listaCotacao.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Trasp<span>Tec</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Fazer Pedido</a></li> 
+                <li><a href="cotacoes.html" class="active">Cotações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Seção Cotações -->
+    <section class="cotacoes-lista">
+        <h2>Cotações Disponíveis</h2>
+        <p class="subtitulo">Propostas de transportadores para seu pedido #AG2025001</p>
+        
+        <div class="filtros">
+            <div class="filtro">
+                <label for="ordenar">Ordenar por:</label>
+                <select id="ordenar">
+                    <option value="preco">Menor Preço</option>
+                    <option value="tempo">Menor Tempo</option>
+                    <option value="avaliacao">Melhor Avaliação</option>
+                </select>
+            </div>
+            <div class="filtro">
+                <label for="veiculo">Tipo de Veículo:</label>
+                <select id="veiculo">
+                    <option value="todos">Todos</option>
+                    <option value="caminhao">Caminhão</option>
+                    <option value="furgão">Furgão</option>
+                    <option value="refrigerado">Refrigerado</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="cotacoes-container">
+            <!-- Cotação 1 -->
+            <div class="cotacao-card">
+                <div class="cotacao-header">
+                    <h3>Transportadora Rápida Ltda</h3>
+                    <div class="avaliacao">★★★★☆ (4.2)</div>
+                </div>
+                <div class="cotacao-detalhes">
+                    <div class="detalhe">
+                        <span class="rotulo">Preço:</span>
+                        <span class="valor">R$ 1.850,00</span>
+                    </div>
+                    <div class="detalhe">
+                        <span class="rotulo">Tempo estimado:</span>
+                        <span class="valor">12-18 horas</span>
+                    </div>
+                    <div class="detalhe">
+                        <span class="rotulo">Veículo:</span>
+                        <span class="valor">Caminhão refrigerado (8t)</span>
+                    </div>
+                </div>
+                <div class="cotacao-acoes">
+                    <a href="detalhe-cotacao.html" class="btn btn-secundario">Ver Detalhes</a>
+                    <a href="aceitar-cotacao.html" class="btn btn-primario">Aceitar</a>
+                </div>
+            </div>
+            
+            <!-- Cotação 2 -->
+            <div class="cotacao-card">
+                <div class="cotacao-header">
+                    <h3>Logística do Campo</h3>
+                    <div class="avaliacao">★★★☆☆ (3.7)</div>
+                </div>
+                <div class="cotacao-detalhes">
+                    <div class="detalhe">
+                        <span class="rotulo">Preço:</span>
+                        <span class="valor">R$ 1.650,00</span>
+                    </div>
+                    <div class="detalhe">
+                        <span class="rotulo">Tempo estimado:</span>
+                        <span class="valor">18-24 horas</span>
+                    </div>
+                    <div class="detalhe">
+                        <span class="rotulo">Veículo:</span>
+                        <span class="valor">Caminhão baú (10t)</span>
+                    </div>
+                </div>
+                <div class="cotacao-acoes">
+                    <a href="detalhe-cotacao.html" class="btn btn-secundario">Ver Detalhes</a>
+                    <a href="aceitar-cotacao.html" class="btn btn-primario">Aceitar</a>
+                </div>
+            </div>
+            
+            <!-- Cotação 3 -->
+            <div class="cotacao-card">
+                <div class="cotacao-header">
+                    <h3>Expresso Agrícola</h3>
+                    <div class="avaliacao">★★★★★ (4.8)</div>
+                </div>
+                <div class="cotacao-detalhes">
+                    <div class="detalhe">
+                        <span class="rotulo">Preço:</span>
+                        <span class="valor">R$ 2.100,00</span>
+                    </div>
+                    <div class="detalhe">
+                        <span class="rotulo">Tempo estimado:</span>
+                        <span class="valor">8-12 horas</span>
+                    </div>
+                    <div class="detalhe">
+                        <span class="rotulo">Veículo:</span>
+                        <span class="valor">Furgão refrigerado (5t)</span>
+                    </div>
+                </div>
+                <div class="cotacao-acoes">
+                    <a href="detalhe-cotacao.html" class="btn btn-secundario">Ver Detalhes</a>
+                    <a href="aceitar-cotacao.html" class="btn btn-primario">Aceitar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="redes-sociais">
+            <a href="#">📱</a>
+            <a href="#">📧</a>
+            <a href="#">🔗</a>
+        </div>
+        <p>&copy; 2025 AgriLog - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
+    </footer>
+</body>
+</html>
