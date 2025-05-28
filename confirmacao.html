@@ -38,11 +38,11 @@
                     <div class="info-grid">
                         <div class="info-item">
                             <strong>Protocolo:</strong>
-                            <span id="protocolo">TT-2025-001234</span>
+                            <span>TT-2025-001234</span>
                         </div>
                         <div class="info-item">
                             <strong>Data/Hora:</strong>
-                            <span id="data-hora">27/05/2025 - 15:22</span>
+                            <span>27/05/2025 - 15:22</span>
                         </div>
                         <div class="info-item">
                             <strong>Status:</strong>
@@ -163,30 +163,5 @@
         </div>
         <p>&copy; 2025 TraspTec - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
     </footer>
-
-    <script>
-        // Simular redirecionamento após envio do formulário
-        // Gerar protocolo único
-        function gerarProtocolo() {
-            const agora = new Date();
-            const ano = agora.getFullYear();
-            const numero = Math.floor(Math.random() * 999999).toString().padStart(6, '0');
-            return `TT-${ano}-${numero}`;
-        }
-
-        // Atualizar data/hora atual
-        function atualizarDataHora() {
-            const agora = new Date();
-            const data = agora.toLocaleDateString('pt-BR');
-            const hora = agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-            return `${data} - ${hora}`;
-        }
-
-        // Atualizar informações na página
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('protocolo').textContent = gerarProtocolo();
-            document.getElementById('data-hora').textContent = atualizarDataHora();
-        });
-    </script>
 </body>
 </html>

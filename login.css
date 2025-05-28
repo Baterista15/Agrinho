@@ -9,67 +9,43 @@
     --header: #ffffff;
 }
 
-/* Estilos gerais */
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--verde-claro);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
-    padding-top: 150px;
-    padding-left: 200px;
-}
-
-/* Header */
-header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 20px;
-    position: relative;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--verde-claro);
-}
-
-.logo span {
-    color: var(--amarelo-colheita);
-}
-
-nav ul {
+    min-height: 100vh;
     display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav a {
-    color: var(--header);
-    text-decoration: none;
-    font-weight: 800;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 /* Seção de autenticação */
 .auth-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    gap: 2rem;
+    width: 100%;
+    gap: 40px;
+    margin: 0 auto;
 }
 
 .auth-container {
-    flex: 1;
-    max-width: 500px;
     background: white;
-    padding: 2rem;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
 }
 
 .auth-container h2 {
@@ -87,12 +63,11 @@ nav a {
 
 /* Formulário */
 .auth-form {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .campo {
     margin-bottom: 1.5rem;
-    margin-right: 10px; /* Espaçamento à direita adicionado */
 }
 
 .campo label {
@@ -104,7 +79,7 @@ nav a {
 
 .campo input {
     width: 100%;
-    padding: 0.8rem;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
@@ -116,47 +91,20 @@ nav a {
     outline: none;
 }
 
-/* Opções de login */
-.auth-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1.5rem 0;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-}
-
-.remember-me input {
-    margin-right: 8px;
-}
-
-.forgot-password {
-    color: var(--verde-campo);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
 /* Botão */
 .btn {
-    display: inline-block;
+    display: block;
     background-color: var(--amarelo-colheita);
     color: #333;
-    padding: 12px 30px;
+    padding: 14px;
     border: none;
     border-radius: 50px;
-    text-decoration: none;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
     width: 100%;
-    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 .btn:hover {
@@ -184,25 +132,28 @@ nav a {
 
 /* Benefícios */
 .auth-benefits {
-    flex: 1;
-    max-width: 500px;
-    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
 }
 
 .auth-benefits h3 {
     color: var(--verde-campo);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .auth-benefits ul {
     list-style-type: none;
-    padding: 0;
 }
 
 .auth-benefits li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
+    line-height: 1.5;
 }
 
 .auth-benefits li:before {
@@ -210,45 +161,50 @@ nav a {
     color: var(--verde-campo);
     position: absolute;
     left: 0;
-}
-
-/* Footer */
-footer {
-    background-color: var(--marrom-terra);
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-}
-
-.redes-sociais {
-    margin-bottom: 20px;
-}
-
-.redes-sociais a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Responsividade */
+@media (max-width: 992px) {
+    .auth-section {
+        gap: 30px;
+    }
+    
+    .auth-container, .auth-benefits {
+        padding: 25px;
+    }
+}
+
 @media (max-width: 768px) {
     .auth-section {
         flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
     
-    .campo {
-        margin-right: 0; /* Remove espaçamento em telas pequenas */
+    .auth-container, .auth-benefits {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
     }
     
-    .auth-options {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+    .auth-container, .auth-benefits {
+        padding: 20px;
     }
     
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    .auth-container h2 {
+        font-size: 1.6rem;
+    }
+    
+    .auth-benefits h3 {
+        font-size: 1.3rem;
+    }
+    
+    .btn {
+        padding: 12px;
     }
 }
