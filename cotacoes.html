@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotações de Produtos Agrícolas - TraspTec</title>
+    <link rel="stylesheet" href="cotacoes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-simples">
+        <div class="logo">Trasp<span>Tec</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Fazer Pedido</a></li>
+                <li><a href="cotacoes.html" class="active">Cotações</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal de Cotações -->
+    <section class="cotacoes-principais">
+        <div class="container">
+            <h1>Cotações de Produtos Agrícolas</h1>
+            <p class="subtitulo">Acompanhe os preços em tempo real dos principais produtos do agronegócio brasileiro</p>
+            
+            <!-- Filtros -->
+            <div class="filtros-cotacao">
+                <div class="filtro-grupo">
+                    <label>Categoria:</label>
+                    <select>
+                        <option>Todos os produtos</option>
+                        <option>Grãos</option>
+                        <option>Hortifrúti</option>
+                        <option>Cereais</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label>Região:</label>
+                    <select>
+                        <option>Todas as regiões</option>
+                        <option>Sudeste</option>
+                        <option>Sul</option>
+                        <option>Centro-Oeste</option>
+                        <option>Nordeste</option>
+                        <option>Norte</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label>Período:</label>
+                    <select>
+                        <option>Hoje</option>
+                        <option>Última semana</option>
+                        <option>Último mês</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Tabela de Cotações -->
+            <div class="tabela-cotacoes">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço Atual</th>
+                            <th>Variação</th>
+                            <th>Região</th>
+                            <th>Última Atualização</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🌽</span>
+                                    <span>Milho (saca 60kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 85,50</td>
+                            <td class="variacao positiva">+2,3%</td>
+                            <td>São Paulo</td>
+                            <td>14:30</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🌾</span>
+                                    <span>Soja (saca 60kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 142,80</td>
+                            <td class="variacao negativa">-1,2%</td>
+                            <td>Mato Grosso</td>
+                            <td>14:25</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🍅</span>
+                                    <span>Tomate (kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 4,20</td>
+                            <td class="variacao positiva">+5,8%</td>
+                            <td>Minas Gerais</td>
+                            <td>14:35</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🥔</span>
+                                    <span>Batata (kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 3,15</td>
+                            <td class="variacao neutra">0,0%</td>
+                            <td>São Paulo</td>
+                            <td>14:20</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🥕</span>
+                                    <span>Cenoura (kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 2,85</td>
+                            <td class="variacao positiva">+3,1%</td>
+                            <td>Rio Grande do Sul</td>
+                            <td>14:15</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🧅</span>
+                                    <span>Cebola (kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 3,90</td>
+                            <td class="variacao negativa">-2,5%</td>
+                            <td>Santa Catarina</td>
+                            <td>14:10</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🌾</span>
+                                    <span>Trigo (saca 60kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 95,20</td>
+                            <td class="variacao positiva">+1,8%</td>
+                            <td>Paraná</td>
+                            <td>14:05</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto-info">
+                                    <span class="produto-icon">🍊</span>
+                                    <span>Laranja (caixa 40kg)</span>
+                                </div>
+                            </td>
+                            <td class="preco">R$ 28,50</td>
+                            <td class="variacao negativa">-0,8%</td>
+                            <td>São Paulo</td>
+                            <td>14:00</td>
+                            <td><a href="pedidos.html" class="btn-pequeno">Solicitar Transporte</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Informações Adicionais -->
+            <div class="info-cotacoes">
+                <div class="info-card">
+                    <h3>📊 Análise de Mercado</h3>
+                    <p>Os preços dos grãos apresentaram alta de 2,1% na última semana, impulsionados pela demanda externa e condições climáticas favoráveis.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🚛 Transporte Disponível</h3>
+                    <p>Temos 150+ transportadores disponíveis para atender suas necessidades de logística agrícola em todo o território nacional.</p>
+                </div>
+                <div class="info-card">
+                    <h3>⏰ Atualizações</h3>
+                    <p>Nossas cotações são atualizadas a cada 15 minutos durante o horário comercial, garantindo informações sempre precisas.</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-cotacoes">
+                <h2>Precisa transportar seus produtos?</h2>
+                <p>Solicite uma cotação personalizada e encontre o melhor transportador para sua carga</p>
+                <a href="pedidos.html" class="btn btn-grande">Solicitar Transporte Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TraspTec</h3>
+                <p>Conectando o campo à cidade com tecnologia e eficiência.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pedidos.html">Fazer Pedido</a></li>
+                    <li><a href="cotacoes.html">Cotações</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>📞 (11) 3456-7890</p>
+                <p>📧 contato@trasptec.com.br</p>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <a href="#">📱</a>
+            <a href="#">📧</a>
+            <a href="#">🔗</a>
+        </div>
+        <p>&copy; 2025 TraspTec - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
+    </footer>
+</body>
+</html>

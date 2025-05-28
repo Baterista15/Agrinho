@@ -1,97 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriLog - Conectando o Campo à Cidade</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraspTec - Conectando o Campo à Cidade</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">Trasp<span>Tec</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pedidos.html">Fazer Pedido</a></li> 
-                <li><a href="cotacoes/">Cotações</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+  <!-- Header -->
+  <header>
+    <div class="logo">Trasp<span>Tec</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pedidos.html">Fazer Pedido</a></li>
+        <li><a href="cotacoes.html">Cotações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Conectando o Campo à Cidade</h1>
+      <p>Transporte rápido, seguro e eficiente para seus produtos agrícolas. Garantimos que sua colheita chegue fresca aos centros urbanos.</p>
+      <a href="pedidos.html" class="btn">Solicitar Transporte</a>
+    </div>
+  </header>
+
+  <!-- Seção Cotações em Destaque -->
+  <section id="cotacoes-destaque" class="cotacoes-destaque">
+    <h2>Cotações em Tempo Real</h2>
+    <p class="subtitulo">Acompanhe os preços atualizados dos principais produtos agrícolas</p>
+    
+    <div class="cotacoes-grid">
+      <div class="cotacao-item">
+        <div class="produto-icon">🌽</div>
+        <h3>Milho</h3>
+        <div class="preco">R$ 85,50/sc</div>
+        <div class="variacao positiva">+2,3%</div>
+        <small>Última atualização: 14:30</small>
+      </div>
+      
+      <div class="cotacao-item">
+        <div class="produto-icon">🌾</div>
+        <h3>Soja</h3>
+        <div class="preco">R$ 142,80/sc</div>
+        <div class="variacao negativa">-1,2%</div>
+        <small>Última atualização: 14:25</small>
+      </div>
+      
+      <div class="cotacao-item">
+        <div class="produto-icon">🍅</div>
+        <h3>Tomate</h3>
+        <div class="preco">R$ 4,20/kg</div>
+        <div class="variacao positiva">+5,8%</div>
+        <small>Última atualização: 14:35</small>
+      </div>
+      
+      <div class="cotacao-item">
+        <div class="produto-icon">🥔</div>
+        <h3>Batata</h3>
+        <div class="preco">R$ 3,15/kg</div>
+        <div class="variacao neutra">0,0%</div>
+        <small>Última atualização: 14:20</small>
+      </div>
+      
+      <div class="cotacao-item">
+        <div class="produto-icon">🥕</div>
+        <h3>Cenoura</h3>
+        <div class="preco">R$ 2,85/kg</div>
+        <div class="variacao positiva">+3,1%</div>
+        <small>Última atualização: 14:15</small>
+      </div>
+      
+      <div class="cotacao-item">
+        <div class="produto-icon">🧅</div>
+        <h3>Cebola</h3>
+        <div class="preco">R$ 3,90/kg</div>
+        <div class="variacao negativa">-2,5%</div>
+        <small>Última atualização: 14:10</small>
+      </div>
+    </div>
+    
+    <div class="cotacoes-acoes">
+      <a href="cotacoes.html" class="btn btn-secundario">Ver Todas as Cotações</a>
+      <a href="pedidos.html" class="btn">Solicitar Transporte</a>
+    </div>
+  </section>
+
+  <!-- Seção Como Funciona -->
+  <section id="como-funciona" class="como-funciona">
+    <h2>Como Funciona</h2>
+    <div class="passos">
+      <div class="passo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1570/1570887.png" alt="Cadastro" />
+        <h3>1. Cadastro</h3>
+        <p>Crie sua conta gratuitamente como produtor ou transportador</p>
+      </div>
+      <div class="passo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="Solicitação" />
+        <h3>2. Solicitação</h3>
+        <p>Informe os detalhes da sua carga e destino</p>
+      </div>
+      <div class="passo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Cotação" />
+        <h3>3. Cotação</h3>
+        <p>Receba propostas de transportadores disponíveis</p>
+      </div>
+      <div class="passo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3348/3348135.png" alt="Entrega" />
+        <h3>4. Entrega</h3>
+        <p>Acompanhe em tempo real até a entrega final</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Estatísticas -->
+  <section id="estatisticas" class="estatisticas">
+    <h2>Nossa Rede em Números</h2>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">2.500+</div>
+        <div class="stat-label">Produtores Cadastrados</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">850+</div>
+        <div class="stat-label">Transportadores Ativos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15.000+</div>
+        <div class="stat-label">Entregas Realizadas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Satisfação dos Clientes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Galeria -->
+  <section id="galeria" class="galeria">
+    <h2>Nossa Conexão em Imagens</h2>
+    <div class="fotos">
+      <div class="foto">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Campo" />
+        <div class="legenda">Colheita no campo</div>
+      </div>
+      <div class="foto">
+        <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Transporte" />
+        <div class="legenda">Transporte especializado</div>
+      </div>
+      <div class="foto">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mercado" />
+        <div class="legenda">Produtos frescos na cidade</div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Seção Contato Melhorada -->
+<section id="contato" class="contato">
+  <h2>Fale Conosco</h2>
+  
+  <div class="contato-container">
+    <!-- Informações de Contato -->
+    <div class="contato-info">
+      <div class="contato-item">
+        <h3>📞 Telefone</h3>
+        <p>(11) 3456-7890</p>
+        <p>(11) 99999-9999</p>
+      </div>
+      
+      <div class="contato-item">
+        <h3>📧 E-mail</h3>
+        <p>contato@trasptec.com.br</p>
+        <p>suporte@trasptec.com.br</p>
+      </div>
+      
+      <div class="contato-item">
+        <h3>📍 Endereço</h3>
+        <p>Av. Paulista, 1000</p>
+        <p>São Paulo/SP - CEP: 01310-100</p>
+      </div>
+    </div>
+    
+    <!-- Formulário de Contato -->
+    <div class="contato-form">
+      <h3>Envie sua Mensagem</h3>
+      <form>
+        <div class="form-grid">
+          <div class="form-group">
+            <input type="text" placeholder="Seu Nome *" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Seu E-mail *" required>
+          </div>
+        </div>
         
-        <div class="hero">
-            <h1>Conectando o Campo à Cidade</h1>
-            <p>Transporte rápido, seguro e eficiente para seus produtos agrícolas. Garantimos que sua colheita chegue fresca aos centros urbanos.</p>
-            <a href="pedidos.html" class="btn">Solicitar Transporte</a>
-        </div>
-    </header>
-    
-    <!-- Seção Como Funciona -->
-    <section id="como-funciona" class="como-funciona">
-        <h2>Como Funciona</h2>
-        <div class="passos">
-            <div class="passo">
-                <img src="https://cdn-icons-png.flaticon.com/512/1570/1570887.png" alt="Cadastro">
-                <h3>1. Cadastro</h3>
-                <p>Crie sua conta gratuitamente como produtor ou transportador</p>
-            </div>
-            <div class="passo">
-                <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="Solicitação">
-                <h3>2. Solicitação</h3>
-                <p>Informe os detalhes da sua carga e destino</p>
-            </div>
-            <div class="passo">
-                <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Cotação">
-                <h3>3. Cotação</h3>
-                <p>Receba propostas de transportadores disponíveis</p>
-            </div>
-            <div class="passo">
-                <img src="https://cdn-icons-png.flaticon.com/512/3348/3348135.png" alt="Entrega">
-                <h3>4. Entrega</h3>
-                <p>Acompanhe em tempo real até a entrega final</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Seção Galeria -->
-    <section id="galeria" class="galeria">
-        <h2>Nossa Conexão em Imagens</h2>
-        <div class="fotos">
-            <div class="foto">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Campo">
-                <div class="legenda">Colheita no campo</div>
-            </div>
-            <div class="foto">
-                <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Transporte">
-                <div class="legenda">Transporte especializado</div>
-            </div>
-            <div class="foto">
-                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mercado">
-                <div class="legenda">Produtos frescos na cidade</div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Seção Contato -->
-    <section id="contato" class="contato">
-        <h2>Fale Conosco</h2>
-        <div class="contato-form">
-            <input type="text" placeholder="Seu Nome">
-            <input type="email" placeholder="Seu E-mail">
+        <div class="form-grid">
+          <div class="form-group">
             <input type="tel" placeholder="Seu Telefone">
-            <textarea placeholder="Sua Mensagem"></textarea>
-            <a href="#" class="btn">Enviar Mensagem</a>
+          </div>
+          <div class="form-group">
+            <select>
+              <option>Assunto</option>
+              <option>Dúvidas sobre transporte</option>
+              <option>Problemas técnicos</option>
+              <option>Parcerias</option>
+              <option>Outros</option>
+            </select>
+          </div>
         </div>
-    </section>
+        
+        <div class="form-group full-width">
+          <textarea placeholder="Sua Mensagem *" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </div>
     
-    <!-- Footer -->
-    <footer>
-        <div class="redes-sociais">
-            <a href="#">📱</a>
-            <a href="#">📧</a>
-            <a href="#">🔗</a>
+    <!-- Informações Extras -->
+    <div class="contato-extra">
+      <h4>⏰ Horário de Atendimento</h4>
+      <div class="horario-funcionamento">
+        <div class="horario-item">
+          <strong>Segunda a Sexta</strong><br>
+          08:00 às 18:00
         </div>
-        <p>&copy; 2025 AgriLog - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
-    </footer>
+        <div class="horario-item">
+          <strong>Sábados</strong><br>
+          08:00 às 12:00
+        </div>
+        <div class="horario-item">
+          <strong>Emergências</strong><br>
+          24h por dia
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TraspTec</h3>
+        <p>Conectando o campo à cidade com tecnologia e eficiência.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pedidos.html">Fazer Pedido</a></li>
+          <li><a href="cotacoes.html">Cotações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p>📞 (11) 3456-7890</p>
+        <p>📧 contato@trasptec.com.br</p>
+      </div>
+    </div>
+    <div class="redes-sociais">
+      <a href="#">📱</a>
+      <a href="#">📧</a>
+      <a href="#">🔗</a>
+    </div>
+    <p>&copy; 2025 TraspTec - Projeto Agrinho | Festejando a conexão Campo-Cidade</p>
+  </footer>
 </body>
 </html>
